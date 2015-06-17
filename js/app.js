@@ -5,7 +5,7 @@ $(document).ready(function() {
 			"dataSrc": "result"
 		},
 		"columns": [
-			{ "data": "MarketName", "render": function (data,type,row) { return '<img src="img/'+ (data).replace('BTC-', '').toLowerCase() +'.png" height="16" width="16"></img> ' + (data) +''; } },
+			{ "data": "MarketName", "render": function (data,type,row) { return '<img src="img/'+ (data).replace('BTC-', '').toLowerCase() +'.png" height="18" width="18"></img> ' + (data) +''; } },
 			{ "data": "Last", "render": function (data,type,row) { return (data).toFixed(8); } },
                         { "data": "High", "render": function (data,type,row) { return '<span style="font-size:12px;color:green;" class="glyphicon glyphicon-arrow-up"></span> ' + (data).toFixed(8) +''; }  },
                         { "data": "Low", "render": function (data,type,row) { return '<span style="font-size:12px;color:red;" class="glyphicon glyphicon-arrow-down"></span> ' + (data).toFixed(8) +''; }  },
